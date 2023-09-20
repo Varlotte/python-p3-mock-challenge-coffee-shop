@@ -98,3 +98,6 @@ class Order:
     def coffee(self, coffee):
         if isinstance(coffee, Coffee):
             self._coffee = coffee
+
+    def __repr__(self):
+        return f'<Order belongs to {self.customer.name} of {self.coffee.name}>'
